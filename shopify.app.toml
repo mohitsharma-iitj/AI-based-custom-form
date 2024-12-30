@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "06cd94cbd90a2592b89f3d7beb656784"
-application_url = "https://libs-sports-mall-craps.trycloudflare.com"
+application_url = "https://petite-band-puppy-rescue.trycloudflare.com"
 embedded = true
 name = "crazy AI form"
 handle = "crazy-ai-form"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://libs-sports-mall-craps.trycloudflare.com/auth/callback",
-  "https://libs-sports-mall-craps.trycloudflare.com/auth/shopify/callback",
-  "https://libs-sports-mall-craps.trycloudflare.com/api/auth/callback"
+  "https://petite-band-puppy-rescue.trycloudflare.com/auth/callback",
+  "https://petite-band-puppy-rescue.trycloudflare.com/auth/shopify/callback",
+  "https://petite-band-puppy-rescue.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

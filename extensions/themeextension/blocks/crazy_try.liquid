@@ -1,0 +1,26 @@
+{{ 'aitest.css' | asset_url | stylesheet_tag }}
+<details class="ai-test">
+  <summary>{{ block.settings.title }}</summary>
+  <p> {{ block.settings.content}} </p>
+</details>
+
+{% schema %}
+{
+  "name": "Crazy_AI",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "This is Mohit Sharma extension"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p> hello, thats Crazy_AI </p>"
+    }
+  ]
+}
+{% endschema %}
