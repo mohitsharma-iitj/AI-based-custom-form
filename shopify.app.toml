@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "06cd94cbd90a2592b89f3d7beb656784"
+application_url = "https://libs-sports-mall-craps.trycloudflare.com"
+embedded = true
+name = "crazy AI form"
+handle = "crazy-ai-form"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://libs-sports-mall-craps.trycloudflare.com/auth/callback",
+  "https://libs-sports-mall-craps.trycloudflare.com/auth/shopify/callback",
+  "https://libs-sports-mall-craps.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "ai-form.myshopify.com"
+automatically_update_urls_on_dev = true
